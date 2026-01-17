@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillHub Home - Light Rainbow Variant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#7f13ec",
+              "background-light": "#ffffff",
+              "slate-850": "#1f2937",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"],
+              "body": ["Noto Sans", "sans-serif"],
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            boxShadow: {
+                'glow': '0 0 20px rgba(127, 19, 236, 0.15)',
+                'soft': '0 10px 40px -10px rgba(0,0,0,0.08)'
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }.text-rainbow {
+            background: linear-gradient(to right, #ef4444, #f59e0b, #10b981, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 font-display min-h-screen flex flex-col transition-colors duration-300">
+<nav class="w-full z-50 border-b border-slate-100 bg-white/90 backdrop-blur-md sticky top-0">
+<div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded-lg bg-slate-900 flex items-center justify-center text-white shadow-md">
+<span class="material-symbols-outlined text-[20px]">extension</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-rainbow">SkillHub</h1>
+</div>
+</div>
+</nav>
+<main class="flex-grow flex flex-col items-center w-full px-6">
+<section class="w-full max-w-4xl py-20 md:py-28 flex flex-col items-center text-center space-y-8">
+<div class="space-y-4">
+<h2 class="text-5xl md:text-7xl font-black tracking-tight leading-tight text-slate-900">
+                    Expand Claude's <span class="text-rainbow">Capabilities</span>
+</h2>
+<p class="text-lg md:text-xl text-slate-600 max-w-2xl font-body font-light">
+                    Discover premium plugins and tools to enhance your AI experience.
+                </p>
+</div>
+<div class="w-full max-w-2xl relative group z-10">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+<div class="relative flex items-center w-full h-14 md:h-16 bg-white rounded-xl shadow-soft border border-slate-200 overflow-hidden focus-within:border-slate-300 focus-within:ring-4 focus-within:ring-slate-100 transition-all">
+<div class="h-full border-r border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-colors">
+<select class="h-full pl-4 pr-8 bg-transparent border-none text-sm font-semibold text-slate-700 focus:ring-0 cursor-pointer outline-none">
+<option selected="">Plugin Name</option>
+<option>Category</option>
+<option>Developer</option>
+<option>Tags</option>
+</select>
+</div>
+<input class="flex-1 h-full bg-transparent border-none focus:ring-0 text-base md:text-lg placeholder:text-slate-400 text-slate-900 font-body px-4" placeholder="Search for tools..." type="text"/>
+<div class="pr-2">
+<button class="h-10 md:h-12 px-6 bg-slate-900 hover:bg-black text-white text-sm font-bold rounded-lg transition-colors shadow-lg shadow-slate-200">
+                            Search
+                        </button>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap justify-center gap-3 pt-2">
+<a class="px-4 py-1.5 rounded-full text-sm font-medium bg-white text-slate-700 border border-slate-200 hover:border-slate-400 hover:text-slate-900 transition-colors shadow-sm" href="#">Popular</a>
+<a class="px-4 py-1.5 rounded-full text-sm font-medium bg-transparent text-slate-500 border border-transparent hover:bg-slate-50 hover:text-slate-700 transition-colors" href="#">Data Analysis</a>
+<a class="px-4 py-1.5 rounded-full text-sm font-medium bg-transparent text-slate-500 border border-transparent hover:bg-slate-50 hover:text-slate-700 transition-colors" href="#">Writing</a>
+<a class="px-4 py-1.5 rounded-full text-sm font-medium bg-transparent text-slate-500 border border-transparent hover:bg-slate-50 hover:text-slate-700 transition-colors" href="#">Development</a>
+<a class="px-4 py-1.5 rounded-full text-sm font-medium bg-transparent text-slate-500 border border-transparent hover:bg-slate-50 hover:text-slate-700 transition-colors" href="#">Productivity</a>
+</div>
+</section>
+<section class="w-full max-w-7xl pb-24">
+<div class="flex items-center justify-between mb-8 px-2">
+<h3 class="text-xl font-bold text-slate-900">Recommended Skills</h3>
+<div class="flex gap-2 text-slate-400">
+<button class="hover:text-slate-900 transition-colors"><span class="material-symbols-outlined">grid_view</span></button>
+<button class="hover:text-slate-900 transition-colors"><span class="material-symbols-outlined">list</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="group flex flex-col bg-white rounded-xl border border-slate-200 p-6 hover:border-slate-400 hover:shadow-lg hover:shadow-slate-200/50 transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="size-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<span class="material-symbols-outlined text-slate-300 cursor-pointer hover:text-slate-900">bookmark</span>
+</div>
+<h4 class="text-lg font-bold mb-2 text-slate-900">DataVis Wizard</h4>
+<p class="text-sm text-slate-600 font-body mb-6 line-clamp-2">
+                        Transform raw CSVs into interactive charts instantly. Supports Python and R integrations.
+                    </p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Data Analysis</span>
+<button class="text-sm font-bold text-slate-900 hover:text-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            Install <span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-xl border border-slate-200 p-6 hover:border-slate-400 hover:shadow-lg hover:shadow-slate-200/50 transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="size-10 rounded-lg bg-green-50 text-green-600 flex items-center justify-center">
+<span class="material-symbols-outlined">code_blocks</span>
+</div>
+<span class="material-symbols-outlined text-slate-300 cursor-pointer hover:text-slate-900">bookmark</span>
+</div>
+<h4 class="text-lg font-bold mb-2 text-slate-900">CodeRefactor Pro</h4>
+<p class="text-sm text-slate-600 font-body mb-6 line-clamp-2">
+                        Optimize Python scripts for speed and readability with one-click suggestions.
+                    </p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Development</span>
+<button class="text-sm font-bold text-slate-900 hover:text-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            Install <span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-xl border border-slate-200 p-6 hover:border-slate-400 hover:shadow-lg hover:shadow-slate-200/50 transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="size-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center">
+<span class="material-symbols-outlined">edit_note</span>
+</div>
+<span class="material-symbols-outlined text-slate-300 cursor-pointer hover:text-slate-900">bookmark</span>
+</div>
+<h4 class="text-lg font-bold mb-2 text-slate-900">CopySmith</h4>
+<p class="text-sm text-slate-600 font-body mb-6 line-clamp-2">
+                        Generate high-converting marketing copy with specific brand voice adherence.
+                    </p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Creative Writing</span>
+<button class="text-sm font-bold text-slate-900 hover:text-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            Install <span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-xl border border-slate-200 p-6 hover:border-slate-400 hover:shadow-lg hover:shadow-slate-200/50 transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="size-10 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center">
+<span class="material-symbols-outlined">translate</span>
+</div>
+<span class="material-symbols-outlined text-slate-300 cursor-pointer hover:text-slate-900">bookmark</span>
+</div>
+<h4 class="text-lg font-bold mb-2 text-slate-900">PolyGlot Translator</h4>
+<p class="text-sm text-slate-600 font-body mb-6 line-clamp-2">
+                        Real-time translation for over 50 languages with context-aware nuance detection.
+                    </p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Translation</span>
+<button class="text-sm font-bold text-slate-900 hover:text-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            Install <span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-xl border border-slate-200 p-6 hover:border-slate-400 hover:shadow-lg hover:shadow-slate-200/50 transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="size-10 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center">
+<span class="material-symbols-outlined">image</span>
+</div>
+<span class="material-symbols-outlined text-slate-300 cursor-pointer hover:text-slate-900">bookmark</span>
+</div>
+<h4 class="text-lg font-bold mb-2 text-slate-900">Visionary Canvas</h4>
+<p class="text-sm text-slate-600 font-body mb-6 line-clamp-2">
+                        Generate and edit images using natural language prompts directly in the chat.
+                    </p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Design</span>
+<button class="text-sm font-bold text-slate-900 hover:text-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            Install <span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-xl border border-slate-200 p-6 hover:border-slate-400 hover:shadow-lg hover:shadow-slate-200/50 transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="size-10 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center">
+<span class="material-symbols-outlined">science</span>
+</div>
+<span class="material-symbols-outlined text-slate-300 cursor-pointer hover:text-slate-900">bookmark</span>
+</div>
+<h4 class="text-lg font-bold mb-2 text-slate-900">Scholar's Mate</h4>
+<p class="text-sm text-slate-600 font-body mb-6 line-clamp-2">
+                        Find and summarize academic papers from verified sources with citation support.
+                    </p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Research</span>
+<button class="text-sm font-bold text-slate-900 hover:text-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            Install <span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full border-t border-slate-200 py-10 bg-white">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+<p class="text-sm text-slate-500 font-body">
+                © 2024 SkillHub. All rights reserved.
+            </p>
+<div class="flex items-center gap-6">
+<a class="text-sm text-slate-500 hover:text-slate-900 transition-colors" href="#">Privacy</a>
+<a class="text-sm text-slate-500 hover:text-slate-900 transition-colors" href="#">Terms</a>
+<a class="text-sm text-slate-500 hover:text-slate-900 transition-colors" href="#">Support</a>
+</div>
+</div>
+</footer>
+</body></html>
