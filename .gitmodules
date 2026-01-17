@@ -1,0 +1,3 @@
+[submodule "skill_marketplace"]
+	path = skill_marketplace
+	url = https://github.com/tobegit3hub/vibe-work-skills.git
