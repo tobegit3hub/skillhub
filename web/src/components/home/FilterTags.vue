@@ -1,16 +1,24 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+interface Props {
+  categories: string[]
+  modelValue: string
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  modelValue: 'All'
+})
+
 const emit = defineEmits<{
-  filter: [category: string]
+  'update:modelValue': [value: string]
 }>()
 
-const categories = ['Popular', 'Data Analysis', 'Writing', 'Development', 'Productivity']
-const selectedCategory = ref('Popular')
+const selectedCategory = ref(props.modelValue)
 
 function selectCategory(category: string) {
   selectedCategory.value = category
-  emit('filter', category)
+  emit('update:modelValue', category)
 }
 </script>
 

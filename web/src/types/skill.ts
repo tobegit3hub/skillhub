@@ -10,6 +10,8 @@ export interface Plugin {
   source: string
   strict: boolean
   skills: string[]
+  // Source marketplace directory (e.g., "vibe-working-skills")
+  sourceDirectory?: string
 }
 
 export interface Owner {
@@ -24,9 +26,11 @@ export interface Metadata {
 
 export interface Marketplace {
   name: string
-  owner: Owner
-  metadata: Metadata
+  owner?: Owner
+  metadata?: Metadata
   plugins: Plugin[]
+  // Source marketplace directory (e.g., "vibe-working-skills")
+  sourceDirectory?: string
 }
 
 // Skill card display data (parsed from SKILL.md)
@@ -35,6 +39,7 @@ export interface SkillDisplay {
   name: string
   description: string
   category: string
+  pluginName: string
   icon: string
   iconBgColor: string
   iconTextColor: string

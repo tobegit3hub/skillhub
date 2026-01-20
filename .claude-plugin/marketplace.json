@@ -1,0 +1,27 @@
+{
+  "name": "sf-skills",
+  "owner": {
+    "name": "chendihao",
+    "email": "chendihao@sf-express.com"
+  },
+  "metadata": {
+    "description": "Claude skills for SF-Express.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "content-check-plugin",
+      "description": "The plugin to check content.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./operation-content-check"]
+    },
+    {
+      "name": "product-requirement-entry",
+      "description": "产品需求录入",
+      "source": "./",
+      "strict": false,
+      "skills": ["./add_raw_requirement", "./add_user_requirement"]
+    }
+  ]
+}

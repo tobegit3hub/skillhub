@@ -1,3 +1,3 @@
-[submodule "skill_marketplace"]
-	path = skill_marketplace
+[submodule "vibe-work-skills"]
+	path = ./web/public/vibe-working-skills/
 	url = https://github.com/tobegit3hub/vibe-work-skills.git

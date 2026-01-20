@@ -75,4 +75,4 @@ src/
 
 ## Data Source
 
-Skills are loaded from `/public/data/marketplace.json` at runtime. This file is copied from the `skill_marketplace/.claude-plugin/marketplace.json` configuration.
+Skills are loaded from `/public/data/marketplace.json` at runtime. This file is copied from the `vibe-work-skills/.claude-plugin/marketplace.json` configuration.

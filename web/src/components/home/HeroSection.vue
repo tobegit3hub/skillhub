@@ -8,7 +8,7 @@
       <h2 class="text-5xl md:text-7xl font-black tracking-tight leading-tight text-slate-900">
         Expand Claude's <span class="text-rainbow">Capabilities</span>
       </h2>
-      <p class="text-lg md:text-xl text-slate-600 max-w-2xl font-body font-light">
+      <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto font-body font-light">
         Discover premium plugins and tools to enhance your AI experience.
       </p>
     </div>
